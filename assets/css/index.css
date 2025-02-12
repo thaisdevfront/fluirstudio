@@ -1,6 +1,19 @@
 *{
     transition: 0.3s;
 }
+
+@media (max-width:768px) {
+    form {
+        display: block;
+        justify-content: center;
+    }
+
+    textarea#msg {
+        width: 100%;
+    }
+}
+
+
 body{
     background-color: #000000;
     padding: 0;
@@ -12,13 +25,14 @@ nav{
     
 }
 .logo{
-    width: 20%;
+    width: 30%;
 }
-.full{
+.full {
     background-image: url(../img/beta.gif);
-    background-position: top;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
+    height: 80vh;
 }
 
 h1,h2,h5,span {
@@ -31,7 +45,7 @@ h1,h2{
     font-style: normal;
 }
 h1{
-    font-size: 4.2rem;
+    font-size: 3.2rem;
 }
 
 p,span{
@@ -45,21 +59,21 @@ p,span{
 
 textarea#msg {
     border-radius: 100px;
-    width: 50%;
+    width: 100%;
     padding: 10px;
 }
 button {
     padding: 10px 50px;
     border-radius: 100px;
-    background-color: #CE0BFF;
+    background-image: linear-gradient(to right top, #CE0BFF, #FF00A2, #FFEE00);
     color: wheat;
 }
-form {
+/* form {
     align-items: center;
     display: flex
 ;
     justify-content: center;
-}
+} */
 
 
 .skills{
